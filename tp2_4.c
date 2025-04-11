@@ -73,6 +73,12 @@ void mostrarMasVeloz(struct compu pcs[], int cantidad)
 int main()
 {
     srand(time(NULL));
+    struct compu pcs[5]; // Arreglo para 5 PCs
+
+    generarPCs(pcs, 5);
+    listarPCs(pcs, 5);
+    mostrarMasVieja(pcs, 5);
+    mostrarMasVeloz(pcs, 5);
 
     return 0;
 }
